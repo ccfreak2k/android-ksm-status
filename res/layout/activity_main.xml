@@ -12,54 +12,70 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/zram_disk_size"
-        android:text="@string/zram_disk_size" />
+        android:id="@+id/ksm_run"
+        android:text="@string/ksm_run" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/zram_compressed_data_size"
-        android:text="@string/zram_compressed_data_size" />
+        android:id="@+id/ksm_sleep_millisecs"
+        android:text="@string/ksm_sleep_millisecs" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/zram_original_data_size"
-        android:text="@string/zram_original_data_size" />
+        android:id="@+id/ksm_pages_to_scan"
+        android:text="@string/ksm_pages_to_scan" />
+
+    <TextView
+        android:id="@+id/ksm_pages_shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ksm_pages_shared" />
     
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/zram_mem_used_total"
-        android:text="@string/zram_mem_used_total" />
+        android:id="@+id/ksm_pages_sharing"
+        android:text="@string/ksm_pages_sharing" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ksm_pages_unshared"
+        android:text="@string/ksm_pages_unshared" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ksm_pages_volatile"
+        android:text="@string/ksm_pages_volatile" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ksm_full_scans"
+        android:text="@string/ksm_full_scans" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ksm_pages_saved"
+        android:text="@string/ksm_pages_saved" />
     
     <ProgressBar
-    	android:id="@+id/zram_compression_ratio_bar"
+    	android:id="@+id/ksm_pages_shared_ratio_progress_bar"
     	android:paddingTop="@dimen/activity_vertical_margin"
         android:layout_width="fill_parent"
         android:layout_height="@dimen/progressbar_height"
         android:progress="0" 
         style="@android:style/Widget.ProgressBar.Horizontal" />
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/zram_compression_ratio"
-        android:text="@string/zram_compression_ratio" />
-    
-    <ProgressBar
-    	android:id="@+id/zram_used_ratio_bar"
-    	android:paddingTop="@dimen/activity_vertical_margin"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/progressbar_height"
-        android:progress="0" 
-        style="@android:style/Widget.ProgressBar.Horizontal" />
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/zram_used_ratio"
-        android:text="@string/zram_used_ratio" />
+        android:id="@+id/ksm_pages_shared_ratio"
+        android:text="@string/ksm_pages_shared_ratio" />
     
     <TextView 
         android:layout_width="wrap_content"

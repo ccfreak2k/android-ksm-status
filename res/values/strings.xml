@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">KSM Status</string>
+    <string name="app_description">Android Application to show KSM (https://en.wikipedia.org/wiki/Kernel_SamePage_Merging_%28KSM%29) status. The following values are tracked:
 
-    <string name="app_name">ZRAM Status</string>
-    <string name="app_description">Android Application to show zram (http://en.wikipedia.org/wiki/ZRam) status. Please visit http://adhisimon.github.com/android-zram-status/ for more information. Source code available at https://github.com/adhisimon/android-zram-status for free.</string>
+		The following is documentation obtained from the official ksm kernel document for each value.
+        
+        Run state: The current running state of ksmd. A value of 1 means it is running normally. (run)
+        
+        Scan interval: how many milliseconds ksmd should sleep before next scan (sleep_millisecs)
+        
+        Pages to scan: how many present pages to scan before ksmd goes to sleep (pages_to_scan)
+        
+        Pages shared: how many shared pages are being used (pages_shared)
+        
+        Pages sharing: how many more sites are sharing them i.e. how much saved (pages_sharing)
+        
+        Pages unshared: how many pages unique but repeatedly checked for merging (pages_unshared)
+        
+        Pages volatile: how many pages changing too fast to be placed in a tree (pages_volatile)
+        
+        Full scans: how many times all mergeable areas have been scanned (full_scans)
+        
+        Pages shared ratio: The ratio of pages shared to pages sharing, indicating the efficiency of ksmd. A lower value indicated better memory savings.</string>
     <string name="app_license"><![CDATA[Distributed under the following BSD 3-Clause License:<br>
 <br>
-Copyright (c) 2013 Adhidarma. All rights reserved.<br>
+Copyright (c) 2013 ccfreak2k.<br>
+<br>
+Based on ZRAM Status, (c) 2013 Adhidarma.<br>
 <br>
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br>
 <br>
@@ -21,14 +42,20 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
     <string name="action_about">About</string>
     <string name="action_share">Share this app&#8230;</string>
     <string name="action_exit">Exit</string>
-       
-    <string name="zram_disk_size">ZRAM Disk Size:</string>
-    <string name="zram_compressed_data_size">ZRAM Compressed Data Size:</string>
-	<string name="zram_original_data_size">ZRAM Original Data Size:</string>
-    <string name="zram_mem_used_total">ZRAM Total Memory Used:</string>
+
+    <string name="ksm_pages_to_scan">Pages to scan:</string>
+    <string name="ksm_sleep_millisecs">Scan interval:</string>
+    <string name="ksm_run">Run state:</string>
     
-    <string name="zram_compression_ratio">ZRAM Compression Ratio:</string>
-    <string name="zram_used_ratio">ZRAM Used Ratio:</string>
+    <string name="ksm_pages_shared">Pages shared:</string>
+    <string name="ksm_pages_sharing">Pages sharing:</string>
+    <string name="ksm_pages_unshared">Pages unshared:</string>
+    <string name="ksm_pages_volatile">Pages volatile:</string>
+    <string name="ksm_full_scans">Full scans:</string>
+
+    <string name="ksm_pages_saved">Pages saved:</string>
+    
+    <string name="ksm_pages_shared_ratio">Pages shared ratio:</string>
     
     <string name="ram_available">Free RAM:</string>
     
